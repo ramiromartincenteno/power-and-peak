@@ -36,45 +36,53 @@
         <p>Envianos tu consulta o solicíta tu pase de prueba por un día.</p>
     </header>
 
-    <main>
-        <section>
-            <h2>Formulario de Contacto</h2>
+    <main class="container my-5">
+        <div class="row g-4">
+            <!-- COLUMNA IZQUIERDA: FORMULARIO -->
+            <section class="col-12 col-md-7">
+                <h2 class="mb-4">Formulario de Contacto</h2>
 
-            <form action="#" method="POST">
-                <div>
-                    <label for="nombre">Nombre Completo:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                <form action="#" method="POST" class="custom-card">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electronico:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="programa" class="form-label">Programa de Interés</label>
+                        <select name="programa" id="progrma" class="form-select">
+                            <option value="musculacion">Musculación & Fuerza</option>
+                            <option value="crossfit">Crossfit & Funcional</option>
+                            <option value="personalizado">Personalizado 1 a 1</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje o Consulta:</label>
+                        <textarea name="mensaje" id="mensaje" rows="4" class="form-control"></textarea>
+                    </div>
+
+                    <button class="btn-custom" type="submit">Enviar Consulta</button>
+                </form>
+            </section>
+            <!-- COLUMNA DERECHA: UBICACION Y DATOS -->
+            <section class="col-12 col-md-5">
+                <h2 class="mb-4">Ubicación y Contacto Directo</h2>
+                <div class="custom-card h-100">
+                    <p><strong>Dirección:</strong> Av. Misiones 278, Catamarca</p>
+                    <p><strong>Telefóno:</strong> 3834963785</p>
+                    <p><strong>Email:</strong> contacto@powerandpeak.com</p>
+                    <hr>
+                    <p class="mt-3"><strong>Horarios de Atención</strong></p>
+                    <p>Lunes a Viernes: 06:00 a 23:00 hs<br>Sábados: 08:00 a 20:00 hs</p>
                 </div>
-
-                <div>
-                    <label for="email">Correo Electronico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div>
-                    <label for="programa">Programa de Interés</label>
-                    <select name="programa" id="progrma">
-                        <option value="musculacion">Musculación & Fuerza</option>
-                        <option value="crossfit">Crossfit & Funcional</option>
-                        <option value="personalizado">Personalizado 1 a 1</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="mensaje">Mensaje o Consulta:</label>
-                    <textarea name="mensaje" id="mensaje" rows="4"></textarea>
-                </div>
-
-                <button class="btn-custom" type="submit">Enviar Consulta</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Ubicación y Contacto Directo</h2>
-            <p><strong>Dirección:</strong> Av. Misiones 278, Catamarca</p>
-            <p><strong>Telefóno:</strong> 3834963785</p>
-            <p><strong>Email:</strong> contacto@powerandpeak.com</p>
-        </section>
+            </section>
+        </div>
     </main>
 
     <!-- FOOTER / PIE DE PÁGINA -->
