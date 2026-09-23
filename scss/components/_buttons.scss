@@ -1,0 +1,19 @@
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $accent-color;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    // Nesting (Anidamiento) con & para el hover
+    &:hover {
+        background-color: lighten($accent-color, 10%);
+        color: #fff;
+    }
+}
+
