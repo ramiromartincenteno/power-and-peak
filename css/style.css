@@ -15,12 +15,20 @@
   color: #fff;
 }
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .custom-card {
+  flex: 1 1 300px;
   background-color: rgb(19.0272727273, 39.5181818182, 61.4727272727);
   border: 1px solid rgb(31.0818181818, 64.5545454545, 100.4181818182);
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 20px;
 }
 .custom-card h3 {
   color: #ffb703;
