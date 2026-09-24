@@ -8,6 +8,7 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -44,21 +45,21 @@
             <!-- Espacio reservado para imagenes cuando armemos la grilla de Bootstrap/CSS -->
 
             <div class="row g-4">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-up">
                 <article class="custom-card h100">
                     <h3>Zona de Rack & Peso Libre</h3>
                     <p>Area acondicionada con piso de goma de alto impacto y barras olímpicas.</p>
                 </article>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-up">
                 <article class="custom-card h-100">
                     <h3>Sector Cárdio & Resistencia</h3>
                     <p>Cintas de correr de última generacion y remos Concept2.</p>
                 </article>
                 </div>
 
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-up">
                 <article class="custom-card h-100">
                     <h3>Vestuarios & Lockers</h3>
                     <p>Sectores ducahas y lockers individuales equipados para tu comodidad.</p>
@@ -74,6 +75,13 @@
         <p>&copy; 2026 Power & Peak - Todos los derechos son reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init({
+    duration: 800,  // Duracion de la animacion en milisegundos (0.8s)
+    once: true  // Para que la animacion ocurra una sola vez al bajar
+  });
+</script>
 </body>
 
 </html>
