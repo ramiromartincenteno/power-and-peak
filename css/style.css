@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn-custom {
   display: inline-block;
   padding: 10px 20px;
@@ -37,6 +38,26 @@
 .custom-card p {
   color: rgb(141.2181818182, 179.1454545455, 219.7818181818);
   line-height: 1.5;
+}
+
+/* Estilos para la sección Hero */
+.hero-section {
+  position: relative;
+  min-height: 75vh;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.85)), url(../img/img-hero.jpg) center/cover no-repeat;
+  border-bottom: 3px solid #ffb703;
+}
+.hero-section .hero-content {
+  max-width: 800px;
+}
+.hero-section .hero-content h1 {
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+.hero-section .hero-content .style-hero-text {
+  color: #e2e8f0;
+  font-size: 1.25rem;
 }
 
 * {

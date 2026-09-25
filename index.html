@@ -40,11 +40,16 @@
     </nav>
 
     <!-- HEADER / HERO -->
-    <header>
-        <h1>Power & Peak Gymnastics</h1>
-        <p>Potencia tu entrenamiento físico con entrenamientos guiados por profesionales y equipo de vanguardia.</p>
-        <a href="pages/entrenamiento.html" class="btn-custom">Ver Plánes y Membresias</a>
-        <a href="pages/contacto.html" class="btn-custom">Solicitar Clases de Prueba</a>
+    <header class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <div class="container hero-content" data-aos="zoom-in">
+            <h1 class="display-3 fw-bold text-uppercase mb-3">Power & Peak Gymnastics</h1>
+            <p class="lead mb-4 mx-auto style-hero-text">Potencia tu entrenamiento físico con entrenamientos guiados por
+                profesionales y equipo de vanguardia.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="pages/entrenamiento.html" class="btn-custom">Ver Plánes y Membresias</a>
+                <a href="pages/contacto.html" class="btn-custom btn-secondary-custom">Solicitar Clases de Prueba</a>
+            </div>
+        </div>
     </header>
 
     <!-- MAIN / CONTENIDO PRINCIPAL -->
@@ -106,11 +111,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- script para inicializar las animaciones -->
     <script>
-  AOS.init({
-    duration: 800,  // Duracion de la animacion en milisegundos (0.8s)
-    once: true  // Para que la animacion ocurra una sola vez al bajar
-  });
-</script>
+        AOS.init({
+            duration: 800,  // Duracion de la animacion en milisegundos (0.8s)
+            once: true  // Para que la animacion ocurra una sola vez al bajar
+        });
+    </script>
 </body>
 
 </html>
