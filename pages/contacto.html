@@ -4,17 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios y Programas | Power & Peak</title>
+    <!-- Meta Etiquetas SEO -->
+    <title>Contacto y Ubicación | Power & Peak Gymnastics</title>
+    <meta name="description"
+        content="Ponete en contacto con el equipo de Power & Peak en Catamarca. Agenda tu clase de pruba gratis o consulta por pases y horarios.">
+    <meta name="keywords"
+        content="contacto gimnasio, ubicación power and peak, gimnasio catamarca, pase de prueba, consulta membresias.">
+    <meta name="author" content="Ramiro Centeno">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- ESTILOS PROPIOS SCSS/CSS -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- AOS CSS CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
     <!-- NAV / NAVEGACIÓN -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
         <div class="container">
             <a class="navbar-brand fw-bold text-warning" href="../index.html">Power & Peak</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,73 +41,181 @@
             </div>
         </div>
     </nav>
-
-    <header>
-        <h1>Sumate a la Comunidad Power & Peak</h1>
-        <p>Envianos tu consulta o solicíta tu pase de prueba por un día.</p>
+    <!-- HEADER / HERO DE CONTACTO -->
+    <header class="py-5 bg-black text-center border-bottom border-secondary">
+        <div class="container my-4" data-aos="zoom-in">
+            <span class="text-warning text text-uppercase fw-bold tracking-wide">Iniciá tu Cambio</span>
+            <h1 class="display-4 fw-bold text-uppercase mt-2 mb-3">Sumate a la Comunidad Power & Peak</h1>
+            <p class="lead mb-0 mx-auto text-light opacity-75" style="max-width: 650px;">Envianos tu consulta o solicíta
+                tu pase de prueba por un día para conocer las instalaciones.</p>
+        </div>
     </header>
 
+    <!-- MAIN CONTENIDO PRINCIPAL  -->
     <main class="container my-5">
         <div class="row g-4">
-            <!-- COLUMNA IZQUIERDA: FORMULARIO -->
-            <section class="col-12 col-md-7">
-                <h2 class="mb-4">Formulario de Contacto</h2>
 
-                <form action="#" method="POST" class="custom-card">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre Completo:</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" required>
-                    </div>
+            <!-- COLUMNA IZQUIERDA: FORMULARIO DE CONTACTO -->
+            <section class="col-12 col-md-7" data-aos="fade-right">
+                <div class="p-4 rounded-3 bg-black border border-secondary h-100">
+                    <h2 class="h3 fw-bold text-white mb-4">Envianos tu Consulta</h2>
 
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electronico:</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label text-light">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="Ej: Ramiro Centeno" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="programa" class="form-label">Programa de Interés</label>
-                        <select name="programa" id="progrma" class="form-select">
-                            <option value="musculacion">Musculación & Fuerza</option>
-                            <option value="crossfit">Crossfit & Funcional</option>
-                            <option value="personalizado">Personalizado 1 a 1</option>
-                        </select>
-                    </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-light">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="ejemplo@correo.com" required>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje o Consulta:</label>
-                        <textarea name="mensaje" id="mensaje" rows="4" class="form-control"></textarea>
-                    </div>
+                        <div class="mb-3">
+                            <label for="programa" class="form-label text-light">Programa de Interés</label>
+                            <select name="programa" id="progrma"
+                                class="form-select bg-dark text-white border-secondary">
+                                <option value="musculacion">Musculación & Fuerza</option>
+                                <option value="crossfit">Crossfit & Funcional</option>
+                                <option value="personalizado">Personalizado 1 a 1</option>
+                                <option value="recovery">Cardio & Recovery</option>
+                            </select>
+                        </div>
 
-                    <button class="btn-custom" type="submit">Enviar Consulta</button>
-                </form>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label text-light">Mensaje o Consulta:</label>
+                            <textarea name="mensaje" id="mensaje" rows="4"
+                                class="form-control bg-dark text-white border-secondary"
+                                placeholder="¿En que horario te gustaria entrenar o que objetivos tenes?"></textarea>
+                        </div>
+
+                        <button class="btn-custom w-100 text-center" type="submit">Enviar Consulta</button>
+                    </form>
+                </div>
             </section>
-            <!-- COLUMNA DERECHA: UBICACION Y DATOS -->
-            <section class="col-12 col-md-5">
-                <h2 class="mb-4">Ubicación y Contacto Directo</h2>
-                <div class="custom-card h-100">
-                    <p><strong>Dirección:</strong> Av. Misiones 278, Catamarca</p>
-                    <p><strong>Telefóno:</strong> 3834963785</p>
-                    <p><strong>Email:</strong> contacto@powerandpeak.com</p>
-                    <hr>
-                    <p class="mt-3"><strong>Horarios de Atención</strong></p>
-                    <p>Lunes a Viernes: 06:00 a 23:00 hs<br>Sábados: 08:00 a 20:00 hs</p>
+            <!-- COLUMNA DERECHA: UBICACION Y CONTACTO DIRECTO -->
+            <section class="col-12 col-lg-5" data-aos="fade-left">
+                <div
+                    class="p-4 rounded-3 bg-black border border-secondary h-100 d-flex flex-column justify-content-between">
+                    <div>
+                        <h2 class="h3 fw-bold text-white mb-4">Atención Directa</h2>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-geo-alt-fill text-warning fs-4 me-3"></i>
+                            <div>
+                                <strong class="d-block text-white">Ubicación:</strong>
+                                <span class="text-secondary small">Av. Misiones 278, San Fernando del valle de
+                                    Catamarca</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-telephone-fill text-warning fs-4 me-3"></i>
+                            <div>
+                                <strong class="d-block text-white">Teléfono / whatsApp:</strong>
+                                <span class="text-secondary small">+54 383 4963785</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <i class="bi bi-envelope-fill text-warning fs-4 me-3"></i>
+                            <div>
+                                <strong class="d-block text-white">Email Comercial:</strong>
+                                <span class="text-secondary small">contacto@powerandpeak.com</span>
+                            </div>
+                        </div>
+
+                        <hr class="border-secondary opacity-50">
+
+                        <h3>Horarios de Entrenamiento</h3>
+                        <div>
+                            <i></i>
+                            <div>
+                                <p class="mb-1"><strong class="text-white">Horarios de Atención:</strong> 06:00 a 23:00
+                                    hs</p>
+                                <p class="mb-0"><strong class="text-white">Sábados:</strong> 08:00 a 20:00 hs</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- BOTON WHATSAPP DIRECTO -->
+                    <div class="mt-4 pt-3 border-top border-secondary">
+                        <a href="https://wa.me/543834963785" target="_blank"
+                            class="btn btn-outline-warning w-100 d-flex align-items-center justify-content-center gap-2"><i
+                                class="bi bi-whatsapp fs-5"></i>Escribinos por whatsApp</a>
+
+                    </div>
                 </div>
             </section>
         </div>
     </main>
 
     <!-- FOOTER / PIE DE PÁGINA -->
-    <footer>
-        <p>&copy; 2026 Power & Peak - Todos los derechos son reservados.</p>
+    <footer class="bg-black text-white pt-5 pb-3 border-top border-secondary">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                
+                <!-- Columna 1: Marca -->
+                <div class="col-12 col-md-4">
+                    <a class="navbar-brand fw-bold text-warning fs-4 d-block mb-2" href="../index.html">Power & Peak</a>
+                    <p class="small text-secondary">
+                        Centro de alto rendimiento dedicado al desarrollo físico integral, fuerza y acondicionamiento.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Navegación Rápida -->
+                <div class="col-12 col-md-4">
+                    <h5 class="text-white fw-semibold mb-3">Navegación</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="../index.html" class="text-secondary text-decoration-none hover-warning">Inicio</a></li>
+                        <li class="mb-2"><a href="servicios.html" class="text-secondary text-decoration-none hover-warning">Servicios</a></li>
+                        <li class="mb-2"><a href="entrenamiento.html" class="text-secondary text-decoration-none hover-warning">Planes y Membresías</a></li>
+                        <li class="mb-2"><a href="contacto.html" class="text-secondary text-decoration-none hover-warning">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Redes Sociales -->
+                <div class="col-12 col-md-4">
+                    <h5 class="text-white fw-semibold mb-3">Conectá con P&P</h5>
+                    <p class="small text-secondary mb-3">Seguinos en redes para ver entrenamientos, eventos y novedades diarias.</p>
+                    <div class="d-flex gap-3">
+                        <a href="https://instagram.com" target="_blank" class="text-warning fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="text-warning fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://whatsapp.com" target="_blank" class="text-warning fs-4" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="text-warning fs-4" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary opacity-50">
+
+            <!-- Copyright -->
+            <div class="row align-items-center small text-secondary pt-2">
+                <div class="col-md-6 text-center text-md-start">
+                    &copy; 2026 Power & Peak - Todos los derechos reservados.
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                    Desarrollado por <span class="text-warning">Ramiro Centeno</span>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scrip para inicializar animaciones -->
     <script>
-  AOS.init({
-    duration: 800,  // Duracion de la animacion en milisegundos (0.8s)
-    once: true  // Para que la animacion ocurra una sola vez al bajar
-  });
-</script>
+        AOS.init({
+            duration: 800,  // Duracion de la animacion en milisegundos (0.8s)
+            once: true  // Para que la animacion ocurra una sola vez al bajar
+        });
+    </script>
 </body>
 
 </html>
